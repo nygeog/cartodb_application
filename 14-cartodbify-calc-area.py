@@ -5,7 +5,7 @@ import cartodb
 username = 'dms8md23'
 apikey = 'fc4b0fe709cc086fd177768e648694d6be3170dc'
 
-insert = "INSERT INTO test_table1 (the_geom, observation) VALUES (CDB_LatLng(40.7127, -74.0059), 'TEST')"
+insert = "select cdb_cartodbfytable('test_tableintersect_area_calc51');"
 
 url = "https://%s.cartodb.com/api/v1/sql" % username
 
