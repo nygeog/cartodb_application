@@ -79,6 +79,6 @@ https://dms8md23.cartodb.com/api/v2/sql?q=INSERT INTO test_table1 (the_geom, obs
 
 		<button onclick="location.href=&quot;https://dms2203.cartodb.com/api/v2/sql?filename=beh_bikertlenall_ct2010.csv&amp;format=csv&amp;q=SELECT geoid,t10birtlen FROM ct10&quot;"><strong>Export</strong> Bike Routes Length data as <strong>CSV</strong></button>
 		
-		
+		<button onclick="location.href="https://dms2203.cartodb.com/api/v2/sql?filename=beh_walkability_ct2010.csv&format=csv&q=SELECT geoid,t10km2,t10lndkm2,t10cnt,t10resdn1,t10intden,t10entrpy,t10rtlfar,t10sub07d,t10walk,t10walkc FROM ct10"">…</button>
 		
 #Join with US Census API and Calculate Area-Weighted Apportionment Values
