@@ -2,6 +2,12 @@
 
 This application example will rely heavily on [Making calls to the SQL API](http://docs.cartodb.com/cartodb-platform/sql-api.html).
 
+#To Do:
+<li><input type="checkbox" disabled> Allow for multiple lat,lng input</li>
+<li><input type="checkbox" disabled> Hook up Census API to get generic census data</li>
+#Done
+<li><input type="checkbox" disabled checked> Remove intermediate tables</li>
+
 ##Details 
 
 Account: dms8md23 (log-in with google)
@@ -11,7 +17,7 @@ Your API Key: fc4b0fe709cc086fd177768e648694d6be3170dc
 
 https://dms8md23.cartodb.com/api/v2/sql?q=INSERT INTO test_table1 (the_geom, observation) VALUES (ST_GeomFromText(’POINT(-71.2 42.5)’, 4326),'rare bird spotted')&api_key=fc4b0fe709cc086fd177768e648694d6be3170dc
 
-##Steps
+##Steps - most SQL steps are now in the actual code:
 * Input Table of X,Y's
 
 	* [Write data to your CartoDB account](http://docs.cartodb.com/cartodb-platform/sql-api.html#write-data-to-your-cartodb-account)
