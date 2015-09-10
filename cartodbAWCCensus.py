@@ -38,7 +38,7 @@ def cartodbAWCensus(inLat,inLng,bufDist,censusFeature,username,apikey):
         req = urllib2.Request(url, urllib.urlencode(params))
         response = urllib2.urlopen(req)
     time.sleep(60)
-    url = "http://dms8md23.cartodb.com/api/v2/sql?q=SELECT%20*%20FROM%20latlngtablebufferintersectcalc_"+fd+"&format=csv&api_key="+apikey
+    url = "http://%scartodb.com/api/v2/sql?q=SELECT%20*%20FROM%20latlngtablebufferintersectcalc_"+fd+"&format=csv&api_key="+apikey % username
     df = pd.read_csv(url)
     df = df.drop(['the_geom','the_geom_webmercator'], axis=1)
     df.to_csv("latlngtablebufferintersectcalc_"+fd+".csv", index=False)
