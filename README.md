@@ -2,6 +2,14 @@
 
 This application example will rely heavily on [Making calls to the SQL API](http://docs.cartodb.com/cartodb-platform/sql-api.html).
 
+###Dependencies
+* [cartodb-python](https://github.com/CartoDB/cartodb-python)
+* [pandas](http://pandas.pydata.org/)
+
+
+![logo](logo/cartodb-arcpy-wrapper-logo.png)
+
+
 #To Do:
 <li><input type="checkbox" disabled> Allow for multiple lat,lng input</li>
 <li><input type="checkbox" disabled> Hook up Census API to get generic census data</li>
