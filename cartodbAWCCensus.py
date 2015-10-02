@@ -6,6 +6,9 @@ from datetime import datetime
 import time
 import pandas as pd
 
+cartoDBusername = 'dms8md23'
+cartoDBapikey = 'fc4b0fe709cc086fd177768e648694d6be3170dc'
+
 def cartodbAWCensus(inLat,inLng,bufDist,censusFeature,inFeatureID,username,apikey):
     fileDate = datetime.now().strftime('%Y%m%d_%H%M%S')
     fd = fileDate
@@ -48,3 +51,8 @@ def cartodbAWCensus(inLat,inLng,bufDist,censusFeature,inFeatureID,username,apike
     print 'Table Output - saved table as .csv to folder where this script has run from'
     print df.head(100)
 
+latlngList = [['40.6400','-73.7800'],['40.7127','-74.0059'],['40.730278','-73.954167']]
+#JFK multipoly for multipolygon testing, ie. Jam Bay Tracts and CityHall and Greenpoint and #JFK
+
+for idx, item in enumerate(latlngList):
+    cartodbAWCensus(item[0],item[1],'2500','nyct2010_explode',idx,cartoDBusername, cartoDBapikey)
