@@ -1,0 +1,11 @@
+https://aureliamoser.cartodb.com:443/api/v2/sql?q=select * from aureliamoser.tl_2014_census_tracts
+
+
+https://aureliamoser.cartodb.com:443/api/v2/sql?q=select * where statefp == 36 AND countyfp == 63 from aureliamoser.tl_2014_census_tracts
+
+
+https://aureliamoser.cartodb.com:443/api/v2/sql?q=select * from aureliamoser.tl_2014_census_tracts where statefp = 36 AND countyfp = 61
+
+"geoid"
+https://aureliamoser.cartodb.com:443/api/v2/sql?q=select geoid from aureliamoser.tl_2014_census_tracts where statefp = 36 AND countyfp = 61
+
